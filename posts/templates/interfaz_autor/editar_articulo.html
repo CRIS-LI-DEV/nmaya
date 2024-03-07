@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+        <h2>{{articulo.titulo}}</h2> 
+        <h1> {{articulo.bajada}}</h1>
+        <a href="/agregar_texto/{{articulo.id}}">AGREGAR PARRAFO</a>
+        <a href="/agregar_imagen/{{articulo.id}}">AGREGAR IMAGEN</a>
+        <br>
+
+        <div style="border:  2px solid black;">
+
+             {% for x in parrafos %}
+            <div style="border:  2px solid black;">
+
+        {{x.texto}}
+          </div>
+        <br>
+        {% endfor %}
+
+        </div>
+       
+<div>
+
+       {% for x in imagenes %}
+        <img src="/media/{{x.archivo  }}" alt="Imagen">
+    {% endfor %}
+</div>
+    </center>
+</body>
+</html>

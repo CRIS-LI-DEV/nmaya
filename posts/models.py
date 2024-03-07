@@ -1,9 +1,6 @@
 from django.db import models
+d
+from .entities.articulo import Articulo 
+from .entities.texto import Texto 
+from .entities.imagen import Imagen 
 
-# Create your models here.
-class Post(models.Model):
-    title = models.TextField()
-    cover = models.ImageField(upload_to='images/')
-
-    def __str__(self):
-        return self.title

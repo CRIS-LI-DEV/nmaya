@@ -1,0 +1,45 @@
+
+{% extends '../base.html' %} {% block content %}
+{% load static %}
+
+<style>
+
+#hero{ text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color: white;
+    background-image: url('/static/caja.jpg');
+    background-size: 100% 100%;
+  }
+  
+ .x{
+      background-image: url('/static/caja.jpg');
+      background-size: 100% 100%;
+  }
+</style>
+
+
+
+
+
+
+<div
+  class="jumbotron text-center "
+ id="hero"
+>
+  <h1 class="display-4">¡Bienvenido a Navegantes de Maya!</h1>
+  <img src="/static/caos2.png" alt="" width="120px" class="image" />
+  <p class="lead" style="font-size: 50px">Magic Store</p>
+  <hr class="my-4" />
+  <p>¡Explora su poderosa presencia en la pantalla!</p>
+  <a class="btn btn-danger btn-lg" href="#" role="button">¡Conócelo más!</a>
+</div>
+
+<div class="row" >
+  <div class="col-sm-6">{% include 'home_secciones/side.html' %}</div>
+  <div class="col-sm-6">{% include 'home_secciones/aside.html' %}</div>
+</div>
+
+
+{% endblock %}
+
+
+

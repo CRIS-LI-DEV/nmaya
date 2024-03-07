@@ -1,0 +1,77 @@
+<div
+  class="container-fluid "
+  style=" width: auto; padding-left: 2px;"
+>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+  {% for x in articulos %}
+
+<script>
+    $(document).ready(function() {
+      $("#f{{x.id}}").click(function() {
+        $("#p{{x.id}}").slideToggle("slow", function() {
+          $("#img{{x.id}}").toggleClass("rotate180");
+        });
+      });
+    });
+  </script>
+<div class="flip" id="f{{x.id}}">
+  
+<h1>
+  <img src="/static/penta2.png" width="32px" alt="" id="img{{x.id}}">
+  {{x.titulo}}
+</h1>  
+
+</div>
+<div class="panel" id="p{{x.id}}" style="border-bottom: dashed 2px white;">
+  
+  
+  
+  
+  
+  
+<p>
+  {{x.bajada}}
+</p>
+<img src="/media/imagenes/{{x.imagen_home}}" alt="">
+</div>
+  
+  {% endfor %}
+</div>
+
+
+
+
+<style> 
+.panel, .flip {
+  padding: 5px;
+  text-align: center;
+  color: white;
+ font-family: "Anta", sans-serif;
+}
+.flip{
+    /* background: linear-gradient(to bottom, #111 70%,  #9d071d 30%); */
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 01); 
+      border-bottom: 3px solid white;
+
+
+text-shadow: 2px 2xp 2px black;
+  }
+.panel {
+  padding: 50px;
+  display: none;
+  border-bottom: 3px solid white;
+}
+ .rotate180 {
+      transform: rotate(180deg);
+      transition: transform 0.5s ease; /* Añade una transición para suavizar el giro */
+    }
+
+
+ 
+    .rotate0 {
+      transform: rotate(0deg);
+      transition: transform 0.5s ease; /* Añade una transición para suavizar el retorno */
+    }   
+</style>

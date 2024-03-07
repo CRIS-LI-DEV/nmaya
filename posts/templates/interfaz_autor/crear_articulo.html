@@ -1,0 +1,18 @@
+<!-- En el archivo formulario.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body><center>
+    <h2>Ingresa tus datos:</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ formulario.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+    </center>
+</body>
+</html>

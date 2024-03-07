@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,400;0,600;1,200;1,500;1,900&family=Space+Grotesk&display=swap");
+
+@font-face {
+  font-family: "MiFuente";
+  src: url("/static/fonts/PlainGermanica.ttf") format("truetype");
+}
+
+body {
+  font-family: "MiFuente", sans-serif;
+  background: #111;
+}
+
+.fondo_nav {
+  background-image: url("/static/fondo.jpg");
+  background-size: auto 150%;
+  margin-bottom: 3px;
+}
+
+.fondo_nav a {
+  color: #fff8e7;
+}
+
+.marco {
+  border: 2px sild greenyellow;
+}
+
+.fondo_cajas_aside {
+  background: black;
+}
+.fondo_cajas_side {
+  background: black;
+}
+
+.fuente_standar {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+}
+.caja {
+  color: #fff8e7;
+  margin: 2px;
+
+  border-radius: 5px;
+  padding: 10px;
+  background-size: 100% 100%;
+
+}
+/* .caja a {color: #fff8e7;}
+.caja a p {color: #fff8e7;}
+.caja a :hover {color: black;}
+.caja a p :hover {color: black;} */
+/* Estilo para el borde del elemento */
+
+.caja:hover  {
+  color: white ;/* Cambiar color de texto al hacer hover */
+  /* background-color: #fff8e7; Cambiar color de fondo al hacer hover */
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/831/614/non_2x/black-seamless-background-with-silhouettes-of-objects-for-magic-vector.jpg');
+  background-size: 100% 100%;
+}
+
+.borde-negro {
+  border: 2px solid black; /* Borde negro */
+}
+
+/* Estilo para el borde blanco */
+.borde-blanco {
+  box-shadow: 0 0 0 2px white; /* Crea una sombra blanca alrededor del borde */
+}
+
+
+
+
+.image {
+ 
+  height: auto;
+  transition: transform 0.5s ease; /* Añade una transición para suavizar el efecto */
+}
+
+.image:hover {
+  transform: rotate(90deg); /* Girar la imagen 90 grados al pasar el mouse por encima */
+
+}
+
+
+.caja:hover {
+  color: #000; /* Cambiar color de texto al hacer hover */
+
+}
+
+
+/* Estilos para el footer */
+footer {
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
+  padding: 20px; /* Espaciado interno del footer */
+  text-align: center; /* Alineación del texto al centro */
+  position: fixed; /* Fijar el footer en la parte inferior de la ventana */
+  bottom: 0; /* Alinear el footer en la parte inferior */
+  width: 100%; /* Ancho completo del footer */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+  max-width: 800px; /* Ancho máximo del contenido del footer */
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+
+.link_estile{
+  color: white;
+  text-decoration: none;
+}
+
+
+.caja_articulo{
+  min-height: 500px;
+  background: greenyellow;
+}
+
+  .navbar-nav .nav-link:hover {
+    color: #9d071d; /* Color rojo */
+  }
+
+  .x{
+      background-image: url('/static/caja.jpg');
+      background-size: 100% 100%;
+  }
+
+
+  a:hover {
+
+/* color:white; */
+  }
+#penta {
+ 
+  height: auto;
+  transition: transform 0.5s ease; /* Añade una transición para suavizar el efecto */
+}
+  #penta:hover{
+
+     transform: rotate(180deg); /* Girar la imagen 90 grados al pasar el mouse por encima */
+
+  }
+
+
+
